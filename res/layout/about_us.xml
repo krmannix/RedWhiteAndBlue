@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ver2" >
+    
+    <include
+        android:id="@+id/background_about_us"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/template_blue"
+        />
+    
+  	<TextView
+        android:id="@+id/about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="About Us"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+    
+  	<RelativeLayout 
+  	    android:id="@+id/about_us_secondary"
+  	    android:layout_height="wrap_content"
+  	    android:layout_width="wrap_content"
+  	    android:layout_below="@+id/background_about_us"
+  	    android:layout_margin="10dp"
+  	    android:padding="15dp"
+  	    android:background="@drawable/rank_background">
+  	
+  	<TextView 
+  	    android:id="@+id/information"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_centerHorizontal="true"
+  	    android:textSize="18sp"
+  	    android:text="@string/infotext"
+  	    android:scrollHorizontally="false"
+  	    android:inputType="textMultiLine"
+  	    android:singleLine="false"
+  	    />
+  	
+  	<ImageView
+        android:id="@+id/visit_site"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/information"
+         android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/rounded_corners_one" />
+
+    <TextView
+        android:id="@+id/visit_site_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/visit_site"
+        android:layout_alignLeft="@+id/visit_site"
+        android:layout_alignRight="@+id/visit_site"
+        android:layout_alignTop="@+id/visit_site"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Visit Site"
+        android:textColor="#FFFFFF" />
+  	
+  	</RelativeLayout>
+  	
+  	<ImageView
+        android:id="@+id/settings"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/about_us_secondary"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/rounded_corners_one" />
+
+    <TextView
+        android:id="@+id/visit_site_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/settings"
+        android:layout_alignLeft="@+id/settings"
+        android:layout_alignRight="@+id/settings"
+        android:layout_alignTop="@+id/settings"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

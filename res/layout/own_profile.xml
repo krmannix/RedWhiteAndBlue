@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ver2" >
+    
+   <include
+        android:id="@+id/background_my_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/template_blue"
+        />
+    
+  	<TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="My Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+  	
+  	     <ProgressBar
+	   android:id="@+id/loading_profile"
+	   style="?android:attr/progressBarStyleLarge"
+	   android:layout_width="120dp"
+	   android:layout_height="120dp"
+	   android:layout_centerHorizontal="true"
+	   android:layout_centerVertical="true"
+       android:visibility="invisible"
+   />
+  	
+  	<ImageView
+  	    android:id="@+id/current_rank_icon"
+  	    android:layout_width="80dp"
+  	    android:layout_height="80dp"
+  	    android:padding="3dp"
+  	    android:layout_below="@+id/background_my_profile"
+  	    android:layout_alignParentLeft="true"
+  	    android:layout_marginLeft="15dp"
+  	    android:layout_marginTop="15dp"
+  	    android:src="@drawable/rank_one"
+  	    android:adjustViewBounds="true"
+        android:scaleType="centerInside" 
+        android:background="@drawable/rank_background"
+  	    />
+  	
+  	<TextView
+  	    android:id="@+id/rank_text"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_alignTop="@+id/current_rank_icon"
+  	    android:layout_toRightOf="@+id/current_rank_icon"
+  	    android:layout_alignBottom="@+id/current_rank_icon"
+  	    android:layout_gravity="center"
+  	    android:layout_marginLeft="5dp"
+  	    android:text="Colonel"
+  	    android:textSize="30sp"
+  	    android:textColor="#FFFFFF"
+  	    />
+  	
+  	<ImageView
+  	    android:id="@+id/background_rect"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="80dp"
+  	    android:src="@drawable/rank_background"
+  	    android:layout_below="@+id/current_rank_icon"
+  	    android:layout_marginTop="10dp"
+  	    />
+  	
+  	<include 
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="fill_parent"
+  	    layout="@layout/horizontal_scroll_view"
+  	    android:id="@+id/scroll_view"
+  	    android:layout_alignLeft="@+id/background_rect"
+        android:layout_alignTop="@+id/background_rect"
+        android:layout_alignRight="@+id/background_rect"
+        android:layout_alignBottom="@+id/background_rect"
+  	    />
+  	
+   <ProgressBar
+	   android:id="@+id/loading_badges"
+	   style="?android:attr/progressBarStyleSmall"
+	   android:layout_width="120dp"
+	   android:layout_height="120dp"
+	   android:layout_centerHorizontal="true"
+	   android:layout_alignLeft="@+id/background_rect"
+       android:layout_alignTop="@+id/background_rect"
+       android:layout_alignRight="@+id/background_rect"
+       android:layout_alignBottom="@+id/background_rect"
+       android:visibility="invisible"
+   />
+  		     
+  	<TextView
+  	    android:id="@+id/no_badges"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_centerHorizontal="true"
+  	    android:layout_alignLeft="@+id/background_rect"
+       android:layout_alignTop="@+id/background_rect"
+       android:layout_alignRight="@+id/background_rect"
+       android:layout_alignBottom="@+id/background_rect"
+       android:visibility="invisible"
+       android:gravity="center"
+       android:text="No Badges!"
+       android:textSize="25sp"
+       />
+<ImageView
+  	    android:id="@+id/background_rect_black"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:src="@drawable/black_background"
+  	    android:layout_alignTop="@+id/profile_written"
+  	    android:layout_alignBottom="@+id/profile_total"
+  	    android:layout_marginTop="-10dp"
+  	    android:layout_marginBottom="-8dp"
+  	    />    
+  	
+  	<TextView 
+  	    android:id="@+id/profile_written"
+  	    android:layout_height="wrap_content"
+  	    android:layout_width="wrap_content"
+  	    android:layout_below="@+id/background_rect"
+  	    android:layout_marginLeft="22dp"
+  	    android:layout_marginTop="8dp"
+  	    android:textSize="18sp"
+  	    android:text="Written: 573"
+  	    android:textColor="#FFFF00"
+  	    />
+  	
+  	<TextView 
+  	    android:id="@+id/profile_rated"
+  	    android:layout_height="wrap_content"
+  	    android:layout_width="wrap_content"
+  	    android:layout_marginRight="22dp"
+  	    android:layout_alignTop="@+id/profile_written"
+  	    android:textSize="18sp"
+  	    android:text="Rated: 810"
+  	    android:layout_alignParentRight="true"
+  	    android:textColor="#FFFF00"
+  	    />
+  	
+  	<TextView
+  	    android:id="@+id/profile_total"
+  	    android:layout_height="wrap_content"
+  	    android:layout_width="wrap_content"
+  	    android:layout_below="@+id/profile_written"
+  	    android:text="Total: 1383"
+  	    android:textSize="18sp"
+  	    android:layout_centerHorizontal="true"
+  	    android:textColor="#FFFF00"
+  	    />
+  	
+  	<TextView
+  	    android:id="@+id/my_profile_promotion_label"
+  	    android:layout_height="wrap_content"
+  	    android:layout_width="wrap_content"
+  	    android:layout_below="@+id/background_rect_black"
+  	    android:layout_marginTop="15dp"
+  	    android:layout_marginLeft="10dp"
+  	    android:textSize="14sp"
+  	    android:text="Promotion Status"
+  	    />
+  	
+  	<ProgressBar
+  	     android:id="@+id/profile_progress_bar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/my_profile_promotion_label"
+         android:layout_marginRight="10dp"
+         android:layout_below="@+id/my_profile_promotion_label"
+         style="@android:style/Widget.ProgressBar.Horizontal" />
+  	
+
+  	
+  	<ImageView 
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/my_profile_message_history"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src= "@drawable/rounded_corners_one"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        />
+    
+    <TextView
+        android:id="@+id/message_history_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_profile_message_history"
+        android:layout_alignTop="@+id/my_profile_message_history"
+        android:layout_alignRight="@+id/my_profile_message_history"
+        android:layout_alignBottom="@+id/my_profile_message_history"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Message History"
+        android:textColor="#FFFFFF" />
+    
+</RelativeLayout>

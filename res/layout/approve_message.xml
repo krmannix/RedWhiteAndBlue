@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_bg"
+     >
+    
+    
+    <include
+        android:id="@+id/background_write"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/template_blue"
+        />
+    
+        <TextView
+        android:id="@+id/approve_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Approve Message"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+        
+        <ImageView
+            android:id="@+id/message_background"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/rounded_beige"
+            android:layout_below="@+id/background_write"
+            />
+        
+        <TextView
+	        android:id="@+id/message_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/message_background"
+	        android:layout_alignTop="@+id/message_background"
+	        android:layout_alignRight="@+id/message_background"
+	        android:layout_alignBottom="@+id/message_background"
+	        android:layout_margin="5dp"
+	        android:text=""
+	        android:textSize="18sp"
+	        android:textColor="#000000" />
+    
+        
+        <RatingBar 
+    	    android:id="@+id/star_rating" 
+    	    style="@style/customStarRatingBarBig" 
+    	    android:layout_below="@+id/message_background"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"   
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="wrap_content"
+    	    android:rating="3"
+    	    android:stepSize=".2" />
+        
+        <ImageView 
+        	android:layout_height="60dp"
+        	android:layout_width="80dp"
+	        android:id="@+id/skip"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerInside"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginBottom="20dp"
+	        android:src="@drawable/rounded_corners_one"
+        />
+         
+         <TextView
+	        android:id="@+id/skip_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/skip"
+	        android:layout_alignTop="@+id/skip"
+	        android:layout_alignRight="@+id/skip"
+	        android:layout_alignBottom="@+id/skip"
+	        android:layout_margin="1dp"
+	        android:gravity="center"
+	        android:text="Skip"
+	        android:textSize="20sp"
+	        android:textColor="#FFFFFF" />
+        
+        <ImageView 
+        	android:layout_height="80dp"
+        	android:layout_width="180dp"
+	        android:id="@+id/submit"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerInside"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginBottom="10dp"
+	        android:src="@drawable/rounded_corners_one"
+        />
+         
+         <TextView
+	        android:id="@+id/send_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/submit"
+	        android:layout_alignTop="@+id/submit"
+	        android:layout_alignRight="@+id/submit"
+	        android:layout_alignBottom="@+id/submit"
+	        android:layout_margin="1dp"
+	        android:gravity="center"
+	        android:text="Submit"
+	        android:textSize="25sp"
+	        android:textColor="#FFFFFF" />
+        
+        
+</RelativeLayout>

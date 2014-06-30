@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ver2"
+     >
+    
+    
+    <include
+        android:id="@+id/background_write"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/template_blue"
+        />
+    
+    <TextView
+        android:id="@+id/send_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Write Message"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+
+        
+        <!-- Large text box -->
+        
+          <EditText
+              android:id="@+id/message_input"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/send"
+              android:layout_alignParentLeft="true"
+              android:padding="10dp"
+              android:layout_below="@+id/background_write"
+              android:layout_marginBottom="10dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/rounded_beige"
+              android:gravity="top"
+              android:ems="10"
+              android:lines="12" />
+        
+        <!-- Bottom buttons -->
+        
+         <ImageView 
+        	android:layout_height="60dp"
+        	android:layout_width="110dp"
+	        android:id="@+id/learn_more"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerInside"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginBottom="20dp"
+	        android:src="@drawable/rounded_corners_one"
+        />
+         
+         <TextView
+	        android:id="@+id/learn_more_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/learn_more"
+	        android:layout_alignTop="@+id/learn_more"
+	        android:layout_alignRight="@+id/learn_more"
+	        android:layout_alignBottom="@+id/learn_more"
+	        android:layout_margin="1dp"
+	        android:gravity="center"
+	        android:text="Learn More"
+	        android:textSize="20sp"
+	        android:textColor="#FFFFFF" />
+         
+         <ImageView 
+        	android:layout_height="80dp"
+        	android:layout_width="130dp"
+	        android:id="@+id/send"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerInside"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginBottom="10dp"
+	        android:src="@drawable/rounded_corners_one"
+        />
+         
+         <TextView
+	        android:id="@+id/send_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/send"
+	        android:layout_alignTop="@+id/send"
+	        android:layout_alignRight="@+id/send"
+	        android:layout_alignBottom="@+id/send"
+	        android:layout_margin="1dp"
+	        android:gravity="center"
+	        android:text="Send!"
+	        android:textSize="25sp"
+	        android:textColor="#FFFFFF" />
+
+       
+
+</RelativeLayout>

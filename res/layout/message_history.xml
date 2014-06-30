@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ver2" >
+    
+   <include
+        android:id="@+id/background_message_history"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/template_blue"
+        />
+   
+   <TextView
+        android:id="@+id/message_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Message History"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+   
+   <ListView
+       android:id="@+id/message_history_list"
+       android:background="@color/light_gray"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_below="@+id/background_message_history"
+       />
+   
+      <ProgressBar
+	   android:id="@+id/loading_message_history"
+	   style="?android:attr/progressBarStyleLarge"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:layout_centerHorizontal="true"
+	   android:layout_below="@+id/background_message_history"
+       android:layout_marginTop="15dp" 
+       android:visibility="invisible"
+   />
+   
+   <TextView android:id="@+id/empty_results_message_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" 
+        android:layout_below="@+id/background_message_history"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        android:text="No Results" />
+   
+   
+   </RelativeLayout>

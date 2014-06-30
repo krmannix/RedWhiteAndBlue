@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ver2"
+    android:paddingBottom="@dimen/activity_vertical_margin"    
+    tools:context=".SplashPage" >
+
+    <ImageView
+        android:id="@+id/signout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/sign_out" />
+    
+    <TextView
+        android:id="@+id/current_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold|normal"
+        android:text="No one logged in"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/splashlogov1" />
+
+    <!-- The ImageViews are controlled by the splash logo -->
+
+    <ImageView
+        android:id="@+id/splash_write"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/splash_logo"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/rounded_corners_one" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splash_write"
+        android:layout_alignLeft="@+id/splash_write"
+        android:layout_alignRight="@+id/splash_write"
+        android:layout_alignTop="@+id/splash_write"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pencil" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splash_write"
+        android:layout_alignLeft="@+id/splash_write"
+        android:layout_alignRight="@+id/splash_write"
+        android:gravity="center"
+        android:text="Write"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/splash_rate"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/splash_logo"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/rounded_corners_one" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splash_rate"
+        android:layout_alignLeft="@+id/splash_rate"
+        android:layout_alignRight="@+id/splash_rate"
+        android:layout_alignTop="@+id/splash_rate"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/mail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splash_rate"
+        android:layout_alignLeft="@+id/splash_rate"
+        android:layout_alignRight="@+id/splash_rate"
+        android:gravity="center"
+        android:text="Rate"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <!-- Rows -->
+
+    <ImageView
+        android:id="@+id/splash_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/splash_write"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/rounded_corners_one" />
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splash_profile"
+        android:layout_alignLeft="@+id/splash_profile"
+        android:layout_alignRight="@+id/splash_profile"
+        android:layout_alignTop="@+id/splash_profile"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="My Profile"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/splash_leader"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/splash_profile"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/rounded_corners_one" />
+
+    <TextView
+        android:id="@+id/leader_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splash_leader"
+        android:layout_alignLeft="@+id/splash_leader"
+        android:layout_alignRight="@+id/splash_leader"
+        android:layout_alignTop="@+id/splash_leader"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Leaderboard"
+        android:textColor="#FFFFFF" />
+
+    <!-- Shorter Rows -->
+
+    <ImageView
+        android:id="@+id/splash_info"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/splash_leader"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/rounded_corners_one" />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splash_info"
+        android:layout_alignLeft="@+id/splash_info"
+        android:layout_alignRight="@+id/splash_info"
+        android:layout_alignTop="@+id/splash_info"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Info"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/splash_rewards"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/splash_leader"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/rounded_corners_one" />
+
+    <TextView
+        android:id="@+id/rewards_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splash_rewards"
+        android:layout_alignLeft="@+id/splash_rewards"
+        android:layout_alignRight="@+id/splash_rewards"
+        android:layout_alignTop="@+id/splash_rewards"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Rewards"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/row_bg">
+    	
+    	<TextView
+    	    android:id="@+id/sent_text"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="wrap_content"
+    	    android:textSize="15sp"
+    	    android:layout_marginLeft="10dp"
+    	    android:text="Sent: Blah Blah"
+    	    android:padding="1dp"
+    	    android:layout_marginTop="5dp"
+    	    android:maxLines="1"
+    	    />
+    	
+    	<TextView
+    	    android:id="@+id/message_text"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="wrap_content"
+    	    android:textSize="15sp"
+    	    android:layout_marginLeft="10dp"
+    	    android:text="A Little Bit Of Message..."
+    	    android:padding="1dp"
+    	    android:layout_below="@+id/sent_text"
+    	    android:maxLines="1"
+    	    android:layout_marginBottom="5dp"
+    	    />
+ 
+</RelativeLayout>

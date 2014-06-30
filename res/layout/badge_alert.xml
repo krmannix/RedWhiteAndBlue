@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alert_bg" >
+    
+    <TextView
+        android:id="@+id/title_badge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:padding="4dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="28sp"
+        android:textColor="#FFF"
+        />
+    
+    <ImageView
+        android:id="@+id/image_badge"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/title_badge"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        />
+        
+        
+    <TextView
+        android:id="@+id/main_text_badge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/image_badge"
+        android:padding="4dp"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        />
+    
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/main_text_badge"
+        android:layout_marginTop="10dp"
+        />
+    
+</RelativeLayout>

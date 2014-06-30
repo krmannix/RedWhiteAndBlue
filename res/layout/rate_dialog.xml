@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alert_bg" >
+    
+    <TextView
+        android:id="@+id/rate_dialog_title"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Rating?"
+        android:textColor="#FFFFFF"
+        />
+    
+    <TextView
+        android:id="@+id/rate_dialog_more"
+   		android:textSize="21sp"
+   		android:layout_below="@+id/rate_dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click ok to confirm"
+        android:textColor="#FFFFFF"
+        />
+    
+    <ImageView 
+        	android:layout_height="40dp"
+        	android:layout_width="80dp"
+	        android:id="@+id/confirm"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerInside"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="20dp"
+	        android:src="@drawable/rounded_corners_one"
+	        android:layout_below="@+id/rate_dialog_more"
+	        android:layout_marginTop="7dp"
+        />
+         
+         <TextView
+	        android:id="@+id/confirm_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/confirm"
+	        android:layout_alignTop="@+id/confirm"
+	        android:layout_alignRight="@+id/confirm"
+	        android:layout_alignBottom="@+id/confirm"
+	        android:layout_margin="1dp"
+	        android:gravity="center"
+	        android:text="Ok"
+	        android:textSize="22sp"
+	        android:textColor="#FFFFFF" />
+         
+         <ImageView 
+        	android:layout_height="40dp"
+        	android:layout_width="80dp"
+	        android:id="@+id/deny"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerInside"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/rounded_corners_one"
+	        android:layout_below="@+id/rate_dialog_more"
+	        android:layout_marginTop="7dp"
+        />
+         
+         <TextView
+	        android:id="@+id/deny_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/deny"
+	        android:layout_alignTop="@+id/deny"
+	        android:layout_alignRight="@+id/deny"
+	        android:layout_alignBottom="@+id/deny"
+	        android:layout_margin="1dp"
+	        android:gravity="center"
+	        android:text="Cancel"
+	        android:textSize="22sp"
+	        android:textColor="#FFFFFF" />
+         
+         <TextView
+             android:layout_height="1dp"
+             android:layout_width="1dp"
+             android:layout_marginTop="20dp"
+             android:layout_below="@+id/deny"
+             />
+        
+
+</RelativeLayout>
